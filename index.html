@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body class="bg-gray-800">
+  <div class="flex items-center justify-center w-screen h-screen">
+    <div
+      class="flex items-center justify-center w-80 h-36 bg-blue-400 z-20 absolute rounded-2xl opacity-75 hidden endgame">
+      <div class="text-6xl text-white font-semibold text-winner"></div>
+    </div>
+    <div>
+      <div class="pb-8 text-center">
+        <span class="text-white text-5xl font-bold">Tic Tac Toe</span>
+      </div>
+      <div class="grid grid-cols-3 gap-2">
+        <button class="cell w-24 h-24 bg-white rounded-2xl hover:bg-gray-300 text-6xl" id="0"></button>
+        <button class="cell w-24 h-24 bg-white rounded-2xl hover:bg-gray-300 text-6xl" id="1"></button>
+        <button class="cell w-24 h-24 bg-white rounded-2xl hover:bg-gray-300 text-6xl" id="2"></button>
+
+        <button class="cell w-24 h-24 bg-white rounded-2xl hover:bg-gray-300 text-6xl" id="3"></button>
+        <button class="cell w-24 h-24 bg-white rounded-2xl hover:bg-gray-300 text-6xl" id="4"></button>
+        <button class="cell w-24 h-24 bg-white rounded-2xl hover:bg-gray-300 text-6xl" id="5"></button>
+
+        <button class="cell w-24 h-24 bg-white rounded-2xl hover:bg-gray-300 text-6xl" id="6"></button>
+        <button class="cell w-24 h-24 bg-white rounded-2xl hover:bg-gray-300 text-6xl" id="7"></button>
+        <button class="cell w-24 h-24 bg-white rounded-2xl hover:bg-gray-300 text-6xl" id="8"></button>
+      </div>
+      <div class="pt-10 flex flex-col gap-6">
+        <div class="change">
+          <p class="text-white font-bold text-2xl text-change"></p>
+        </div>
+        <button class="bg-red-400 active:bg-red-700 text-white p-2 rounded-lg font-bold" onclick="startIt()">
+          Replay
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="src/js/turn.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "tictac-with-css",
+  "version": "1.0.0",
+  "description": "cool project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./src/tailwind.css -o ./src/css/style.css"
+  },
+  "author": "zhafran jupleks",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^2.2.19"
+  }
+}
